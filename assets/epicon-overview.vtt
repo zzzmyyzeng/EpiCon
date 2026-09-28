@@ -1,0 +1,88 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.870
+What if one agent's experience could help many others?
+
+00:00:03.120 --> 00:00:08.004
+Introducing EpiCon: collective agent learning through co-evolving multimodal memory.
+
+00:00:08.254 --> 00:00:14.300
+EpiCon turns past executions into shared experience, without updating the host model's parameters.
+
+00:00:15.167 --> 00:00:19.346
+Two independently trained, two-billion-parameter models manage memory.
+
+00:00:19.596 --> 00:00:22.670
+A memory controller refines guidance within a question.
+
+00:00:22.920 --> 00:00:29.298
+A tree self-organizer consolidates lessons across questions, keeping experience available to different agent
+
+00:00:29.298 --> 00:00:29.789
+systems.
+
+00:00:30.666 --> 00:00:33.754
+Consider the paper's illustrative transit-map example.
+
+00:00:34.004 --> 00:00:37.786
+An incorrect route triggers revised guidance and a more useful image crop.
+
+00:00:38.036 --> 00:00:41.667
+Across attempts, text and visual evidence evolve together.
+
+00:00:41.917 --> 00:00:45.446
+The controller also decides when visual memory should be included.
+
+00:00:46.300 --> 00:00:51.602
+Related lessons from multiple cities are organized and consolidated into a reusable routing rule.
+
+00:00:51.852 --> 00:00:55.599
+A new question can retrieve that guidance and solve in a single attempt.
+
+00:00:55.849 --> 00:00:59.818
+These trajectories and tree operations are reconstructed for illustration.
+
+00:01:00.700 --> 00:01:06.593
+Across eleven benchmarks and four task domains, the compact EpiCon variant improves macro-average scores by one
+
+00:01:06.593 --> 00:01:10.275
+point seven to four point nine points over no memory.
+
+00:01:10.525 --> 00:01:16.680
+All methods in the main comparison make one solving attempt, with historical banks frozen during evaluation.
+
+00:01:17.533 --> 00:01:24.399
+The two compact memory models reduce memory-operation time by sixty-seven to seventy-four percent relative to
+
+00:01:24.399 --> 00:01:26.230
+backbone-sized EpiCon memory models.
+
+00:01:26.480 --> 00:01:31.876
+This reduction concerns memory operations, not the total time required to solve a task.
+
+00:01:32.733 --> 00:01:38.622
+A frozen bank transfers across backbones and harnesses, with macro-average gains of three point two and four
+
+00:01:38.622 --> 00:01:39.661
+point two points.
+
+00:01:39.911 --> 00:01:45.858
+When another harness expands and evolves the bank, the original contributor gains two point one to three point
+
+00:01:45.858 --> 00:01:46.519
+two points.
+
+00:01:46.769 --> 00:01:49.228
+Individual benchmarks do not all improve.
+
+00:01:50.100 --> 00:01:56.737
+EpiCon connects multimodal memory refinement, hierarchical consolidation, and shared experience reuse.
+
+00:01:56.987 --> 00:01:58.269
+Learn from execution.
+
+00:01:58.519 --> 00:01:59.736
+Preserve the evidence.
+
+00:01:59.986 --> 00:02:01.813
+Build on one another's experience.
