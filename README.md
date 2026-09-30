@@ -14,22 +14,22 @@
 
 如放在 `docs/`，选择 `/docs` 作为发布目录。无需额外依赖，也不调用在线字体、CDN、分析服务或第三方脚本。
 
-## 发布论文与代码后
+## 论文与代码链接
 
 编辑 `config.js`：
 
 ```js
 window.EPICON_CONFIG = {
-  paperUrl: 'https://arxiv.org/abs/实际编号',
-  githubUrl: 'https://github.com/用户名/仓库名',
-  arxivId: '实际编号',
+  paperUrl: 'https://arxiv.org/pdf/2609.37923',
+  githubUrl: '',
+  arxivId: '2609.37923',
   year: '2026'
 };
 ```
 
-- 目前 Paper / GitHub 显示 Coming soon，没有伪造链接。填入 URL 后会自动启用。
-- 设置 `arxivId` 后会自动更新页面上可复制的 BibTeX。`assets/citation.bib` 是静态备用副本，正式发布时请同步更新它。
-- 尚无 arXiv 编号，因此当前 BibTeX 使用明确的 `TODO` 占位。没有虚构编号或论文录用状态。
+- Paper 已链接至论文 PDF：https://arxiv.org/pdf/2609.37923 。GitHub 按钮仍为 Coming soon，填入代码仓库 URL 后自动启用。
+- `arxivId` 会更新页面上可复制的 BibTeX。`assets/citation.bib` 是静态备用副本，后续更改引用时请同步更新。
+- 页面与备用 BibTeX 均使用 arXiv 编号 `2609.37923`，保留完整作者和标题，不含待发布占位说明。
 - 作者、单位链接在访问前后保持相同颜色。
 
 ## 内容和数据

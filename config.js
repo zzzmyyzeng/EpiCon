@@ -1,7 +1,7 @@
-// Fill these values after release. All paths work under a GitHub Pages repository URL.
+// Publication links; add the code URL when ready. All paths work under a GitHub Pages repository URL.
 window.EPICON_CONFIG = {
-  paperUrl: '',
+  paperUrl: 'https://arxiv.org/pdf/2609.37923',
   githubUrl: '',
-  arxivId: '',
+  arxivId: '2609.37923',
   year: '2026'
 };

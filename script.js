@@ -11,7 +11,9 @@
   connect('github-link', config.githubUrl, 'GitHub');
   const bib = document.getElementById('bibtex');
   if (config.arxivId) {
-    bib.textContent = bib.textContent.replace('{TODO}', '{' + config.arxivId + '}').replace('  note          = {Preprint; arXiv identifier to be added}', '  url           = {https://arxiv.org/abs/' + config.arxivId + '}');
+    bib.textContent = bib.textContent
+      .replace(/eprint\s*= \{[^}]*\}/, 'eprint        = {' + config.arxivId + '}')
+      .replace(/url\s*= \{[^}]*\}/, 'url           = {https://arxiv.org/abs/' + config.arxivId + '}');
   }
   if (config.year) bib.textContent = bib.textContent.replace(/year\s*= \{\d{4}\}/, 'year          = {' + config.year + '}');
   document.querySelectorAll('.config-button').forEach(button => {
